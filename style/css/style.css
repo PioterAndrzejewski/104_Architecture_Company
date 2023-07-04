@@ -113,7 +113,7 @@ input {
 }
 
 :root {
-  --color-theme-alpha: rgba(53, 84, 223, 0.2);
+  --color-theme-alpha: rgba(32, 62, 192, 0.2);
   --color-theme: rgb(32, 62, 192);
   --color-main-text: rgb(255, 255, 255);
   --font-main: "Poppins", sans-serif;
@@ -178,4 +178,33 @@ input {
   color: var(--color-main-text);
   font-family: var(--font-main);
   font-size: 13px;
+}
+.header .nav__color-link {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: rgb(26, 3, 235);
+}
+
+.yellow {
+  background-color: rgb(235, 212, 3);
+}
+
+.green {
+  background-color: rgb(72, 219, 36);
+}
+
+.pink {
+  background-color: rgb(219, 36, 195);
 }/*# sourceMappingURL=style.css.map */
