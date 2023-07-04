@@ -114,7 +114,7 @@ input {
 
 :root {
   --color-theme-alpha: rgba(53, 84, 223, 0.2);
-  --color-theme: rgb(53, 84, 223);
+  --color-theme: rgb(32, 62, 192);
   --color-main-text: rgb(255, 255, 255);
   --font-main: "Poppins", sans-serif;
   --font-secondary: "Roboto", sans-serif;
@@ -155,6 +155,23 @@ input {
   position: relative;
   display: inline-block;
   padding: 8px 12px;
+}
+.header .nav__link:hover {
+  cursor: pointer;
+}
+.header .nav__link::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: var(--color-theme);
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+}
+.header .nav__link:hover::after {
+  width: 100%;
 }
 .header .nav__link-text {
   text-decoration: none;
