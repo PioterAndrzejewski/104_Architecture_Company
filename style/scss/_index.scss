@@ -124,9 +124,7 @@
 }
 
 .offer {
-  width: 80%;
-  margin: auto;
-  text-align: center;
+  @include screen-section;
   padding-top: 100px;
   &__heading {
     @include main-font(36px);
@@ -161,5 +159,72 @@
     @include main-font(18px);
     font-weight: 600;
     margin: 10px 8px;
+  }
+}
+
+.offices {
+  @include screen-section;
+  padding-top: 50px;
+  &__heading {
+    @include main-font(36px);
+    font-weight: 600;
+  }
+  &__description {
+    @include main-font(14px);
+    line-height: 22px;
+    padding: 10px;
+  }
+  &__cards {
+    margin-top: 30px;
+    display: flex;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+  &__card {
+    flex-basis: 32%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    &:nth-child(2) {
+      margin: 0 20px;
+      @include tablet {
+        margin: 20px 0;
+      }
+    }
+  }
+  &__image {
+    width: 100%;
+    display: block;
+  }
+  &__image-backdrop {
+    @include main-font(18px);
+    padding-top: 20px;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background 0.3s;
+    &:hover {
+      background: var(--color-theme-alpha2);
+      .offices__image-city {
+        opacity: 1;
+        bottom: 40%;
+      }
+    }
+  }
+  &__image-city {
+    @include main-font(26px);
+    position: absolute;
+    width: 100%;
+    font-weight: 500;
+    color: var(--color-text-main);
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: bottom 0.5s;
   }
 }

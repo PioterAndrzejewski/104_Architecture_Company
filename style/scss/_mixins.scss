@@ -27,6 +27,12 @@
   width: 100%;
 }
 
+@mixin screen-section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
 @mixin bg-gradient($bg-url) {
   background-image: linear-gradient(
       rgba(54, 54, 54, 0.7),

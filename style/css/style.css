@@ -118,7 +118,7 @@ input {
   --color-theme-main: rgb(32, 62, 192);
   --color-text-main: rgb(255, 255, 255);
   --color-text-secondary: #777;
-  --color-shadow-gray: #dbdbdb;
+  --color-shadow-gray: #dbdbdb8f;
   --font-main: "Poppins", sans-serif;
   --font-secondary: "Roboto", sans-serif;
 }
@@ -364,4 +364,90 @@ input {
   font-size: 18px;
   font-weight: 600;
   margin: 10px 8px;
+}
+
+.offices {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.offices__heading {
+  font-family: var(--font-main);
+  font-size: 36px;
+  font-weight: 600;
+}
+.offices__description {
+  font-family: var(--font-main);
+  font-size: 14px;
+  line-height: 22px;
+  padding: 10px;
+}
+.offices__cards {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 700px) {
+  .offices__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.offices__card {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.offices__card:nth-child(2) {
+  margin: 0 20px;
+}
+@media (max-width: 700px) {
+  .offices__card:nth-child(2) {
+    margin: 20px 0;
+  }
+}
+.offices__image {
+  width: 100%;
+  display: block;
+}
+.offices__image-backdrop {
+  font-family: var(--font-main);
+  font-size: 18px;
+  padding-top: 20px;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.offices__image-backdrop:hover {
+  background: var(--color-theme-alpha2);
+}
+.offices__image-backdrop:hover .offices__image-city {
+  opacity: 1;
+  bottom: 40%;
+}
+.offices__image-city {
+  font-family: var(--font-main);
+  font-size: 26px;
+  position: absolute;
+  width: 100%;
+  font-weight: 500;
+  color: var(--color-text-main);
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  -webkit-transition: bottom 0.5s;
+  transition: bottom 0.5s;
 }/*# sourceMappingURL=style.css.map */
