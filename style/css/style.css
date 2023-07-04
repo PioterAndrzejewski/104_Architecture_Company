@@ -120,6 +120,26 @@ input {
   --font-secondary: "Roboto", sans-serif;
 }
 
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: rgb(26, 3, 235);
+}
+
+.yellow {
+  background-color: rgb(235, 212, 3);
+}
+
+.green {
+  background-color: rgb(72, 219, 36);
+}
+
+.pink {
+  background-color: rgb(219, 36, 195);
+}
+
 .header {
   min-height: 100vh;
   width: 100%;
@@ -188,23 +208,47 @@ input {
   border: 1px solid white;
   cursor: pointer;
 }
-
-.red {
-  background-color: red;
+.header .text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+  color: var(--color-main-text);
 }
-
-.blue {
-  background-color: rgb(26, 3, 235);
+.header .text-box__heading {
+  font-family: var(--font-main);
+  font-size: 62px;
+  font-weight: 800;
 }
-
-.yellow {
-  background-color: rgb(235, 212, 3);
+@media (max-width: 700px) {
+  .header .text-box__heading {
+    font-family: var(--font-main);
+    font-size: 20px;
+  }
 }
-
-.green {
-  background-color: rgb(72, 219, 36);
+.header .text-box__paragraph {
+  margin: 10px 0 40px;
+  font-family: var(--font-main);
+  font-size: 14px;
 }
-
-.pink {
-  background-color: rgb(219, 36, 195);
+.header .text-box__link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-main-text);
+  border: 1px solid var(--color-main-text);
+  padding: 12px 34px;
+  font-family: var(--font-main);
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+}
+.header .text-box__link:hover {
+  border: 1px solid var(--color-theme);
+  background-color: var(--color-theme-alpha);
 }/*# sourceMappingURL=style.css.map */

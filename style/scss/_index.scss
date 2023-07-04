@@ -41,24 +41,42 @@
       cursor: pointer;
     }
   }
-}
 
-.red {
-  background-color: red;
-}
+  .text-box {
+    @include center-xy;
+    width: 90%;
+    text-align: center;
+    color: var(--color-main-text);
 
-.blue {
-  background-color: rgb(26, 3, 235);
-}
+    &__heading {
+      @include main-font(62px);
+      font-weight: 800;
+      @include tablet {
+        @include main-font(20px);
+      }
+    }
+    
+    &__paragraph {
+      margin: 10px 0 40px;
+      @include main-font(14px);
+    }
 
-.yellow {
-  background-color: rgb(235, 212, 3);
-}
+    &__link {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--color-main-text);
+      border: 1px solid var(--color-main-text);
+      padding: 12px 34px;
+      @include main-font(13px);
+      background: transparent;
+      position: relative;
+      cursor: pointer;
+      transition: border 0.5s;
 
-.green {
-  background-color: rgb(72, 219, 36);
-}
-
-.pink {
-  background-color: rgb(219, 36, 195);
+      &:hover {
+        border: 1px solid var(--color-theme);
+        background-color: var(--color-theme-alpha);
+      }
+    }
+  }
 }
