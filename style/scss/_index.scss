@@ -2,6 +2,7 @@
   @include full-screen-section;
   @include bg-gradient("../../img/banner.png");
   position: relative;
+  overflow-x: hidden;
 
   .nav {
     display: flex;
@@ -10,25 +11,65 @@
     align-items: center;
 
     &__logo {
-      width: 170px;
+      width: 140px;
+    }
+
+    &__icon {
+      display: none;
+      @include tablet {
+        color: var(--color-main-text);
+        position: absolute;
+        right: 5%;
+        font-size: 22px;
+        z-index: 3;
+        cursor: pointer;
+        transition: transform 0.3s;
+        &--active {
+          display: block;
+        }
+        &--active-anim {
+          transform: rotate(360deg);
+        }
+      }
     }
 
     &__links {
       @include reset-list;
       flex: 1;
+      @include tablet {
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        padding: 60px 20px 20px 20px;
+        background: var(--color-theme-alpha2);
+        z-index: 2;
+        text-align: left;
+        transition: right 0.3s;
+        &--active {
+          right: 0;
+        }
+      }
     }
 
     &__link {
       position: relative;
       display: inline-block;
-      padding: 8px 12px;
-      @include link-transition;
+      padding: 8px 10px;
+      @include tablet {
+        display: block;
+        &:nth-child(5) {
+          margin-bottom: 20px;
+        }
+      }
     }
 
     &__link-text {
       text-decoration: none;
       color: var(--color-main-text);
       @include main-font(13px);
+      @include link-transition;
     }
 
     &__color-link {
@@ -39,6 +80,7 @@
       margin-left: 5px;
       border: 1px solid white;
       cursor: pointer;
+      margin-left: 12px;
     }
   }
 
@@ -49,13 +91,13 @@
     color: var(--color-main-text);
 
     &__heading {
-      @include main-font(62px);
       font-weight: 800;
+      @include main-font(62px);
       @include tablet {
         @include main-font(20px);
       }
     }
-    
+
     &__paragraph {
       margin: 10px 0 40px;
       @include main-font(14px);
@@ -67,14 +109,14 @@
       color: var(--color-main-text);
       border: 1px solid var(--color-main-text);
       padding: 12px 34px;
-      @include main-font(13px);
       background: transparent;
       position: relative;
       cursor: pointer;
       transition: border 0.5s;
+      @include main-font(13px);
 
       &:hover {
-        border: 1px solid var(--color-theme);
+        border: 1px solid var(--color-theme-main);
         background-color: var(--color-theme-alpha);
       }
     }
