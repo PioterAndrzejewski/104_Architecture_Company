@@ -1,23 +1,23 @@
 const colors = {
   red: {
     main: "rgb(223, 53, 53)",
-    alpha: "rgba(223, 53, 53, 0.2)",
+    alpha: "rgba(223, 53, 53, 0.15)",
   },
   blue: {
     main: "rgb(32, 62, 192)",
-    alpha: "rgba(32, 62, 192, 0.2)",
+    alpha: "rgba(32, 62, 192, 0.15)",
   },
   yellow: {
     main: "rgb(232, 235, 65)",
-    alpha: "rgba(232, 235, 65, 0.2)",
+    alpha: "rgba(232, 235, 65, 0.15)",
   },
   green: {
     main: "rgb(95, 221, 116)",
-    alpha: "rgba(95, 221, 116, 0.2)",
+    alpha: "rgba(95, 221, 116, 0.15)",
   },
   pink: {
     main: "rgb(225, 84, 230)",
-    alpha: "rgba(225, 84, 230, 0.2)",
+    alpha: "rgba(225, 84, 230, 0.15)",
   },
 };
 
