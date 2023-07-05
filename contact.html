@@ -37,6 +37,58 @@
       </article>
     </header>
 
+    <section class="contact">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1274.336185399001!2d18.67643582723691!3d50.298043366690855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1688564059813!5m2!1spl!2spl"
+        width="600" height="450" style="border:0;" allowfullscreen
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        class="location"></iframe>
+    </section>
+
+    <main class="contact-us">
+      <div class="contact-us__left">
+        <article class="contact-us__section">
+          <i class="fa-solid fa-house contact-us__icon"></i>
+          <div class="contact-us__box">
+            <h5 class="contact-us__title">XXZ Road, XTY Office</h5>
+            <p class="contact-us__subtitle">Gliwice, Polska</p>
+          </div>
+        </article>
+        <article class="contact-us__section">
+          <i class="fa-solid fa-phone contact-us__icon"></i>
+          <div class="contact-us__box">
+            <h5 class="contact-us__title">+48 603071887</h5>
+            <p class="contact-us__subtitle">Monday to Saturday, 9AM to 4PM</p>
+          </div>
+        </article>
+        <article class="contact-us__section">
+          <i class="fa-solid fa-envelope contact-us__icon"></i>
+          <div class="contact-us__box">
+            <h5 class="contact-us__title">p.andrzejewski@outlook.com</h5>
+            <p class="contact-us__subtitle">Email us</p>
+          </div>
+        </article>
+      </div>
+
+      <aside>
+        <article class="form">
+          <h2 class="form__title">Contact us</h2>
+          <form method="post"
+            onsubmit="event.preventDefault()">
+            <input type="text" placeholder="Enter your name" class="form__input"
+              required>
+            <input type="email" placeholder="Enter Email address"
+              class="form__input" required>
+            <input type="text" placeholder="Enter your subject"
+              class="form__input" required>
+            <textarea placeholder="Enter your message" rows="4"
+              class="form__input" required></textarea>
+            <button class="form__button">Send message</button>
+          </form>
+        </article>
+      </aside>
+    </main>
+
     <footer class="footer">
       <h4 class="footer__heading">About Us</h4>
       <p class="footer__description">Lorem ipsum, dolor sit amet consectetur
@@ -49,12 +101,14 @@
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-linkedin"></i>
       </div>
-      <p class="footer__author">Made with <i class="fa-regular fa-heart"></i> by
+      <p class="footer__author">Made with <i class="fa-regular fa-heart"></i>
+        by
         Piotr Andrzejewski</p>
     </footer>
 
     <script src="script/script.js"></script>
     <script src="https://kit.fontawesome.com/d4963600d0.js"
       crossorigin="anonymous"></script>
+
   </body>
 </html>
