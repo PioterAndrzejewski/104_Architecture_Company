@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Company</title>
+    <link rel="stylesheet" href="style/css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html"><img src="img/logo.png" alt="company logotype"
+            class="nav__logo"></a>
+        <ul class="nav__links">
+          <li class="nav__link"><a class="nav__link-text" href="/">HOME</a></li>
+          <li class="nav__link"><a class="nav__link-text">ABOUT</a></li>
+          <li class="nav__link"><a class="nav__link-text">COURSE</a></li>
+          <li class="nav__link"><a class="nav__link-text">BLOG</a></li>
+          <li class="nav__link"><a class="nav__link-text">CONTACT</a></li>
+          <li class="nav__color-link red" data-color="red"></li>
+          <li class="nav__color-link blue" data-color="blue"></li>
+          <li class="nav__color-link yellow" data-color="yellow"></li>
+          <li class="nav__color-link green" data-color="green"></li>
+          <li class="nav__color-link pink" data-color="pink"></li>
+        </ul>
+        <i class="fa-solid fa-xmark nav__icon" onclick="toggleNavbar()"></i>
+        <i class="fa-solid fa-bars nav__icon nav__icon--active"
+          onclick="toggleNavbar()"></i>
+      </nav>
+      <article class="text-box">
+        <h1 class="text-box__heading">Best Architecture Company</h1>
+        <p class="text-box__paragraph">We are designing architecture like noone
+          else on this world. Yes it
+          is true.</p>
+        <a href="#" class="text-box__link">Learn more</a>
+      </article>
+    </header>
+
+    <footer class="footer">
+      <h4 class="footer__heading">About Us</h4>
+      <p class="footer__description">Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Eum debitis beatae quas magni saepe iure adipisci
+        neque porro iusto sit.</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p class="footer__author">Made with <i class="fa-regular fa-heart"></i> by
+        Piotr Andrzejewski</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+    <script src="https://kit.fontawesome.com/d4963600d0.js"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
