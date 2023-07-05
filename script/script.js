@@ -33,6 +33,7 @@ const setThemeColors = (color) => {
       colors[color][varName],
     );
   }
+  window.localStorage.setItem("favColor", color);
 };
 
 const setColorFromLocalStorage = () => {
@@ -57,7 +58,6 @@ const colorLinks = document.querySelectorAll(".nav__color-link");
 colorLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     setThemeColors(e.target.dataset.color);
-    window.localStorage.setItem("favColor", e.target.dataset.color);
   });
 });
 setColorFromLocalStorage();
