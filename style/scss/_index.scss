@@ -244,7 +244,6 @@
 
 .testimonials {
   @include screen-section;
-
   &__heading {
     @include main-font(36px);
     font-weight: 600;
@@ -306,7 +305,6 @@
   @include bg-gradient("../../img/banner2.jpg");
   border-radius: 10px;
   padding: 100px 30px;
-  margin-bottom: 100px;
   &__heading {
     @include screen-section-heading;
     color: var(--color-text-main);
@@ -317,5 +315,46 @@
   }
   &__link {
     @include rectangle-link;
+  }
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  &__heading {
+    @include screen-section-heading;
+    color: var(--color-text-secondary);
+    margin: 25px 0 40px 0;
+    @include mobile {
+      font-size: 22px;
+    }
+  }
+  &__description {
+    @include main-font(14px);
+    line-height: 22px;
+    margin: 10px 0 20px 0;
+  }
+  .fa-brands {
+    padding: 0 8px;
+    color: var(--color-theme-alpha2);
+    font-size: 18px;
+    transform: scale(100%);
+    transition: color 0.3s, transform 0.2s;
+    &:hover {
+      color: var(--color-theme-main);
+      cursor: pointer;
+      transform: scale(105%);
+    }
+  }
+
+  &__author {
+    @include main-font(14px);
+    color: var(--color-text-secondary);
+    line-height: 22px;
+    margin: 20px 0 20px 0;
+    .fa-heart {
+      color: var(--color-theme-main);
+    }
   }
 }

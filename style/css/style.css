@@ -310,7 +310,7 @@ input {
 
 .offer {
   width: 80%;
-  margin: auto;
+  margin: 80px auto;
   text-align: center;
   padding-top: 100px;
 }
@@ -368,7 +368,7 @@ input {
 
 .offices {
   width: 80%;
-  margin: auto;
+  margin: 80px auto;
   text-align: center;
   padding-top: 50px;
 }
@@ -457,7 +457,7 @@ input {
 
 .team {
   width: 80%;
-  margin: auto;
+  margin: 80px auto;
   text-align: center;
   margin-top: 100px;
 }
@@ -516,7 +516,7 @@ input {
 
 .testimonials {
   width: 80%;
-  margin: auto;
+  margin: 80px auto;
   text-align: center;
 }
 .testimonials__heading {
@@ -592,7 +592,7 @@ input {
 
 .action-call {
   width: 80%;
-  margin: auto;
+  margin: 80px auto;
   text-align: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 54, 54, 0.7)), to(var(--color-theme-alpha))), url("../../img/banner2.jpg");
   background-image: linear-gradient(rgba(54, 54, 54, 0.7), var(--color-theme-alpha)), url("../../img/banner2.jpg");
@@ -600,7 +600,6 @@ input {
   background-size: cover;
   border-radius: 10px;
   padding: 100px 30px;
-  margin-bottom: 100px;
 }
 .action-call__heading {
   font-family: var(--font-main);
@@ -631,4 +630,55 @@ input {
 .action-call__link:hover {
   border: 1px solid var(--color-theme-main);
   background-color: var(--color-theme-alpha);
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer__heading {
+  font-family: var(--font-main);
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin: 25px 0 40px 0;
+}
+@media (max-width: 700px) {
+  .footer__heading {
+    font-size: 22px;
+  }
+}
+.footer__description {
+  font-family: var(--font-main);
+  font-size: 14px;
+  line-height: 22px;
+  margin: 10px 0 20px 0;
+}
+.footer .fa-brands {
+  padding: 0 8px;
+  color: var(--color-theme-alpha2);
+  font-size: 18px;
+  -webkit-transform: scale(100%);
+          transform: scale(100%);
+  -webkit-transition: color 0.3s, -webkit-transform 0.2s;
+  transition: color 0.3s, -webkit-transform 0.2s;
+  transition: color 0.3s, transform 0.2s;
+  transition: color 0.3s, transform 0.2s, -webkit-transform 0.2s;
+}
+.footer .fa-brands:hover {
+  color: var(--color-theme-main);
+  cursor: pointer;
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+.footer__author {
+  font-family: var(--font-main);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 22px;
+  margin: 20px 0 20px 0;
+}
+.footer__author .fa-heart {
+  color: var(--color-theme-main);
 }/*# sourceMappingURL=style.css.map */
