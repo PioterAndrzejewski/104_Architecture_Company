@@ -68,7 +68,8 @@
       <aside>
         <article class="form">
           <h2 class="form__title">Contact us</h2>
-          <form action="form-handler.php" method="post">
+          <form method="post"
+            onsubmit="event.preventDefault()">
             <input type="text" placeholder="Enter your name" class="form__input"
               required>
             <input type="email" placeholder="Enter Email address"

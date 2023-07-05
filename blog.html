@@ -85,7 +85,8 @@
         </article>
         <section class="comment-box">
           <h3 class="comment-box__heading">Leave a comment</h3>
-          <form class="comment-box__form">
+          <form class="comment-box__form"
+            onsubmit="event.preventDefault()">
             <input type="text" placeholder="Enter Name"
               class="comment-box__input">
             <input type="email" placeholder="Enter Email"
