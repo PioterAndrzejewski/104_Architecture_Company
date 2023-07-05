@@ -1,0 +1,6 @@
+.header {
+  &--contact {
+    @include bg-gradient("../../img/background.jpg");
+    min-height: 50vh;
+  }
+}

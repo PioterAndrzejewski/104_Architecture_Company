@@ -22,7 +22,7 @@
   @include full-screen-section;
   @include bg-gradient("../../img/banner.png");
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 
   .nav {
     display: flex;

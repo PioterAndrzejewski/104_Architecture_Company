@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Company</title>
+    <link rel="stylesheet" href="style/css/style.css">
+  </head>
+  <body>
+    <header class="header header--blog">
+      <nav class="nav">
+        <a href="index.html"><img src="img/logo.png" alt="company logotype"
+            class="nav__logo"></a>
+        <ul class="nav__links">
+          <li class="nav__link"><a class="nav__link-text" href="/">HOME</a></li>
+          <li class="nav__link"><a class="nav__link-text" href="/about.html">ABOUT</a></li>
+          <li class="nav__link"><a class="nav__link-text" href="/process.html">PROCESS</a></li>
+          <li class="nav__link"><a class="nav__link-text" href="/blog.html">BLOG</a></li>
+          <li class="nav__link"><a class="nav__link-text" href="/contact.html">CONTACT</a></li>
+          <li class="nav__color-link red" data-color="red"></li>
+          <li class="nav__color-link blue" data-color="blue"></li>
+          <li class="nav__color-link yellow" data-color="yellow"></li>
+          <li class="nav__color-link green" data-color="green"></li>
+          <li class="nav__color-link pink" data-color="pink"></li>
+        </ul>
+        <i class="fa-solid fa-xmark nav__icon" onclick="toggleNavbar()"></i>
+        <i class="fa-solid fa-bars nav__icon nav__icon--active"
+          onclick="toggleNavbar()"></i>
+      </nav>
+      <article class="text-box">
+        <h1 class="text-box__heading">Blog</h1>
+      </article>
+    </header>
+
+    <section class="blog">
+      <main class="blog__main posts">
+        <article class="post">
+          <img src="img/certificate.jpg" alt="architect with client"
+            class="post__image">
+          <h2 class="post__title">Starting new project for international client</h2>
+          <p class="post__text">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptatum, illo praesentium sunt eveniet itaque,
+            debitis magni molestiae nulla, nemo aut vero! Veniam neque
+            laudantium quidem temporibus! Natus inventore dolore accusamus
+            laudantium fugit ullam unde illo accusantium, quod, id ab
+            asperiores, vel reiciendis! Error doloribus libero iure nihil,
+            quisquam ea accusantium porro quam rerum a ullam reiciendis neque
+            officia excepturi est sunt dolorum temporibus id magnam voluptatibus
+            at quod. Fugit nesciunt laudantium inventore ad alias doloribus iste
+            amet adipisci, nostrum accusantium, consectetur repellendus atque.
+            Possimus asperiores velit quisquam, vero corporis necessitatibus a
+            iste! Sed ducimus porro laudantium quos exercitationem. Debitis,
+            corporis!</p>
+          <p class="post__text">Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Provident soluta est a blanditiis nisi autem,
+            inventore ipsam quibusdam asperiores adipisci, id assumenda
+            voluptate facere impedit possimus vitae iste aliquid, repudiandae
+            nemo rerum! Qui hic optio perspiciatis, asperiores expedita ullam
+            laboriosam dolor dolores numquam eligendi aut ipsam, nemo vitae amet
+            reprehenderit aliquam, harum incidunt vel quis. Explicabo eveniet
+            corrupti optio distinctio nesciunt voluptate laborum aspernatur
+            fugit repellat nihil, aliquid maxime quibusdam? Cum maiores ipsa
+            minus eius pariatur harum, sint repudiandae natus. Maiores ipsum
+            asperiores optio nobis quas. Ut eum nisi, aliquam provident
+            explicabo consectetur fugit iure aspernatur rem obcaecati ab
+            laboriosam quas maiores dolorum praesentium eveniet atque assumenda,
+            nemo perspiciatis quis. Tempore quis maiores iste enim ducimus.
+            Dicta illo praesentium minima!</p>
+          <p class="post__text">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Necessitatibus dolor deserunt distinctio
+            architecto perspiciatis cum laborum obcaecati nobis iste accusamus
+            officiis inventore fuga, pariatur consequuntur hic voluptate
+            exercitationem quasi? Suscipit vero ex optio in praesentium facere
+            reiciendis? Quisquam, soluta veritatis accusantium corrupti impedit
+            unde accusamus, quo amet earum omnis aspernatur recusandae sequi
+            neque in necessitatibus nostrum cupiditate. Consectetur optio
+            necessitatibus iure, expedita, perspiciatis odit debitis temporibus
+            et reprehenderit veniam aliquam.</p>
+          <p class="post__text">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Saepe a, qui obcaecati eveniet molestias vitae.
+            Pariatur amet cumque a? Ea saepe fugit deserunt quibusdam harum
+            explicabo aperiam perspiciatis accusantium praesentium, magni
+            dolorum tempora. Aliquam voluptatum cumque, excepturi animi ipsam
+            odio!</p>
+        </article>
+        <section class="comment-box">
+          <h3 class="comment-box__heading">Leave a comment</h3>
+          <form class="comment-box__form">
+            <input type="text" placeholder="Enter Name"
+              class="comment-box__input">
+            <input type="email" placeholder="Enter Email"
+              class="comment-box__input">
+            <textarea rows="5" placeholder="Your comment"
+              class="comment-box__input"> </textarea>
+            <button type="submit" class="comment-box__button">SUBMIT</button>
+          </form>
+        </section>
+      </main>
+      <aside class="blog__aside">
+        <div class="categories">
+          <h3 class="categories__title">Post categories</h3>
+          <div class="category">
+            <span class="category__name">Constructions</span>
+            <span class="category__number">14</span>
+          </div>
+          <div class="category">
+            <span class="category__name">Design</span>
+            <span class="category__number">7</span>
+          </div>
+          <div class="category">
+            <span class="category__name">Materials</span>
+            <span class="category__number">33</span>
+          </div>
+          <div class="category">
+            <span class="category__name">Investment</span>
+            <span class="category__number">14</span>
+          </div>
+          <div class="category">
+            <span class="category__name">Schools</span>
+            <span class="category__number">2</span>
+          </div>
+          <div class="category">
+            <span class="category__name">Software</span>
+            <span class="category__number">22</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <h4 class="footer__heading">About Us</h4>
+      <p class="footer__description">Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Eum debitis beatae quas magni saepe iure adipisci
+        neque porro iusto sit.</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p class="footer__author">Made with <i class="fa-regular fa-heart"></i>
+        by
+        Piotr Andrzejewski</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+    <script src="https://kit.fontawesome.com/d4963600d0.js"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
