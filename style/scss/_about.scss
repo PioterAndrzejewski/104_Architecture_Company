@@ -1,0 +1,51 @@
+.header {
+  &--about {
+    @include bg-gradient("../../img/background.jpg");
+    min-height: 50vh;
+  }
+}
+
+.about-us {
+  @include screen-section;
+  @include cards-box;
+  text-align: left;
+  margin-top: 100px;
+  @include mobile {
+    text-align: center;
+  }
+  &__main {
+    padding-right: 20px;
+    @include mobile {
+      padding-right: 0;
+    }
+  }
+  &__heading {
+    @include main-font(36px);
+    padding-top: 0;
+    font-weight: 600;
+  }
+
+  &__description {
+    @include main-font(14px);
+    line-height: 22px;
+    padding: 15px 0 25px 0;
+    text-align: left;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__link {
+    @include rectangle-link;
+    color: var(--color-text-secondary);
+    border: 1px solid var(--color-text-secondary);
+    transition: 0.3s;
+  }
+
+  &__aside {
+    @include mobile {
+      margin-top: 100px;
+    }
+  }
+}

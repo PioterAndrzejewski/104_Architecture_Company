@@ -308,6 +308,57 @@ input {
   background-color: var(--color-theme-alpha);
 }
 
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 30px;
+}
+.footer__heading {
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin: 15px 0 20px 0;
+}
+@media (max-width: 700px) {
+  .footer__heading {
+    font-size: 22px;
+  }
+}
+.footer__description {
+  font-family: var(--font-main);
+  font-size: 14px;
+  line-height: 22px;
+  margin: 10px 0 20px 0;
+}
+.footer .fa-brands {
+  padding: 0 8px;
+  color: var(--color-theme-alpha2);
+  font-size: 18px;
+  -webkit-transform: scale(100%);
+          transform: scale(100%);
+  -webkit-transition: color 0.3s, -webkit-transform 0.2s;
+  transition: color 0.3s, -webkit-transform 0.2s;
+  transition: color 0.3s, transform 0.2s;
+  transition: color 0.3s, transform 0.2s, -webkit-transform 0.2s;
+}
+.footer .fa-brands:hover {
+  color: var(--color-theme-main);
+  cursor: pointer;
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+.footer__author {
+  font-family: var(--font-main);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 22px;
+  margin: 20px 0 20px 0;
+}
+.footer__author .fa-heart {
+  color: var(--color-theme-main);
+}
+
 .offer {
   width: 80%;
   margin: 80px auto;
@@ -632,53 +683,89 @@ input {
   background-color: var(--color-theme-alpha);
 }
 
-.footer {
-  width: 100%;
-  text-align: center;
-  padding: 30px 0;
+.header--about {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 54, 54, 0.7)), to(var(--color-theme-alpha))), url("../../img/background.jpg");
+  background-image: linear-gradient(rgba(54, 54, 54, 0.7), var(--color-theme-alpha)), url("../../img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 50vh;
 }
-.footer__heading {
-  font-family: var(--font-main);
-  font-size: 36px;
-  font-weight: 600;
-  color: var(--color-text-secondary);
-  margin: 25px 0 40px 0;
+
+.about-us {
+  width: 80%;
+  margin: 80px auto;
+  text-align: center;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  margin-top: 100px;
 }
 @media (max-width: 700px) {
-  .footer__heading {
-    font-size: 22px;
+  .about-us {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
-.footer__description {
+@media (max-width: 700px) {
+  .about-us {
+    text-align: center;
+  }
+}
+.about-us__main {
+  padding-right: 20px;
+}
+@media (max-width: 700px) {
+  .about-us__main {
+    padding-right: 0;
+  }
+}
+.about-us__heading {
+  font-family: var(--font-main);
+  font-size: 36px;
+  padding-top: 0;
+  font-weight: 600;
+}
+.about-us__description {
   font-family: var(--font-main);
   font-size: 14px;
   line-height: 22px;
-  margin: 10px 0 20px 0;
+  padding: 15px 0 25px 0;
+  text-align: left;
 }
-.footer .fa-brands {
-  padding: 0 8px;
-  color: var(--color-theme-alpha2);
-  font-size: 18px;
-  -webkit-transform: scale(100%);
-          transform: scale(100%);
-  -webkit-transition: color 0.3s, -webkit-transform 0.2s;
-  transition: color 0.3s, -webkit-transform 0.2s;
-  transition: color 0.3s, transform 0.2s;
-  transition: color 0.3s, transform 0.2s, -webkit-transform 0.2s;
+.about-us__image {
+  width: 100%;
 }
-.footer .fa-brands:hover {
-  color: var(--color-theme-main);
+.about-us__link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-text-main);
+  border: 1px solid var(--color-text-main);
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
   cursor: pointer;
-  -webkit-transform: scale(105%);
-          transform: scale(105%);
-}
-.footer__author {
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
   font-family: var(--font-main);
-  font-size: 14px;
+  font-size: 13px;
   color: var(--color-text-secondary);
-  line-height: 22px;
-  margin: 20px 0 20px 0;
+  border: 1px solid var(--color-text-secondary);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-.footer__author .fa-heart {
-  color: var(--color-theme-main);
+.about-us__link:hover {
+  border: 1px solid var(--color-theme-main);
+  background-color: var(--color-theme-alpha);
+}
+@media (max-width: 700px) {
+  .about-us__aside {
+    margin-top: 100px;
+  }
 }/*# sourceMappingURL=style.css.map */
