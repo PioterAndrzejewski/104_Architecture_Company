@@ -16,7 +16,7 @@
 
     &__icon {
       display: none;
-      @include tablet {
+      @include mobile {
         color: var(--color-text-main);
         position: absolute;
         right: 5%;
@@ -36,7 +36,7 @@
     &__links {
       @include reset-list;
       flex: 1;
-      @include tablet {
+      @include mobile {
         position: absolute;
         height: 100vh;
         width: 200px;
@@ -57,7 +57,7 @@
       position: relative;
       display: inline-block;
       padding: 8px 10px;
-      @include tablet {
+      @include mobile {
         display: block;
         &:nth-child(5) {
           margin-bottom: 20px;
@@ -93,7 +93,7 @@
     &__heading {
       font-weight: 800;
       @include main-font(62px);
-      @include tablet {
+      @include mobile {
         @include main-font(20px);
       }
     }
@@ -127,16 +127,13 @@
   @include screen-section;
   padding-top: 100px;
   &__heading {
-    @include main-font(36px);
-    font-weight: 600;
+    @include screen-section-heading;
   }
   &__description {
-    @include main-font(14px);
-    line-height: 22px;
-    padding: 10px;
+    @include screen-section-subheading;
   }
   &__cards {
-    @include cards-3;
+    @include cards-box;
   }
   &__card {
     flex-basis: 31%;
@@ -161,16 +158,13 @@
   @include screen-section;
   padding-top: 50px;
   &__heading {
-    @include main-font(36px);
-    font-weight: 600;
+    @include screen-section-heading;
   }
   &__description {
-    @include main-font(14px);
-    line-height: 22px;
-    padding: 10px;
+    @include screen-section-subheading;
   }
   &__cards {
-    @include cards-3;
+    @include cards-box;
   }
   &__card {
     flex-basis: 32%;
@@ -179,7 +173,7 @@
     overflow: hidden;
     &:nth-child(2) {
       margin: 0 20px;
-      @include tablet {
+      @include mobile {
         margin: 20px 0;
       }
     }
@@ -225,18 +219,15 @@
   margin-top: 100px;
 
   &__heading {
-    @include main-font(36px);
-    font-weight: 600;
+    @include screen-section-heading;
   }
 
   &__subheading {
-    @include main-font(14px);
-    line-height: 22px;
-    padding: 10px;
+    @include screen-section-subheading;
   }
 
   &__cards {
-    @include cards-3;
+    @include cards-box;
   }
 
   &__card {
@@ -262,5 +253,64 @@
     @include main-font(14px);
     font-weight: 300;
     margin: 16px 0 15px 0;
+  }
+}
+
+.testimonials {
+  @include screen-section;
+
+  &__heading {
+    @include main-font(36px);
+    font-weight: 600;
+  }
+
+  &__subheading {
+    @include main-font(14px);
+    line-height: 22px;
+    padding: 10px;
+  }
+
+  &__cards {
+    @include cards-box;
+  }
+
+  &__card {
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: var(--color-theme-alpha);
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+  }
+
+  &__image {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+    @include mobile {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+  }
+
+  &__description {
+    @include main-font(14px);
+    font-weight: 300;
+    padding: 0;
+  }
+
+  &__card-title {
+    @include main-font(18px);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .fa-solid {
+    font-size: 12px;
+    color: var(--color-theme-main);
   }
 }
