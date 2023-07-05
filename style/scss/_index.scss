@@ -104,21 +104,7 @@
     }
 
     &__link {
-      display: inline-block;
-      text-decoration: none;
-      color: var(--color-text-main);
-      border: 1px solid var(--color-text-main);
-      padding: 12px 34px;
-      background: transparent;
-      position: relative;
-      cursor: pointer;
-      transition: border 0.5s;
-      @include main-font(13px);
-
-      &:hover {
-        border: 1px solid var(--color-theme-main);
-        background-color: var(--color-theme-alpha);
-      }
+      @include rectangle-link;
     }
   }
 }
@@ -312,5 +298,24 @@
   .fa-solid {
     font-size: 12px;
     color: var(--color-theme-main);
+  }
+}
+
+.action-call {
+  @include screen-section;
+  @include bg-gradient("../../img/banner2.jpg");
+  border-radius: 10px;
+  padding: 100px 30px;
+  margin-bottom: 100px;
+  &__heading {
+    @include screen-section-heading;
+    color: var(--color-text-main);
+    margin-bottom: 40px;
+    @include mobile {
+      font-size: 22px;
+    }
+  }
+  &__link {
+    @include rectangle-link;
   }
 }

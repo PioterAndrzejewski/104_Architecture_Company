@@ -78,3 +78,21 @@
     flex-direction: column;
   }
 }
+
+@mixin rectangle-link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-text-main);
+  border: 1px solid var(--color-text-main);
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: border 0.5s;
+  @include main-font(13px);
+
+  &:hover {
+    border: 1px solid var(--color-theme-main);
+    background-color: var(--color-theme-alpha);
+  }
+}
