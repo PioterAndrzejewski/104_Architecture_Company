@@ -136,12 +136,7 @@
     padding: 10px;
   }
   &__cards {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-    @include tablet {
-      flex-direction: column;
-    }
+    @include cards-3;
   }
   &__card {
     flex-basis: 31%;
@@ -175,11 +170,7 @@
     padding: 10px;
   }
   &__cards {
-    margin-top: 30px;
-    display: flex;
-    @include tablet {
-      flex-direction: column;
-    }
+    @include cards-3;
   }
   &__card {
     flex-basis: 32%;
@@ -226,5 +217,50 @@
     transform: translateX(-50%);
     opacity: 0;
     transition: bottom 0.5s;
+  }
+}
+
+.team {
+  @include screen-section;
+  margin-top: 100px;
+
+  &__heading {
+    @include main-font(36px);
+    font-weight: 600;
+  }
+
+  &__subheading {
+    @include main-font(14px);
+    line-height: 22px;
+    padding: 10px;
+  }
+
+  &__cards {
+    @include cards-3;
+  }
+
+  &__card {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  &__card-title {
+    @include main-font(18px);
+    font-weight: 600;
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  &__description {
+    @include main-font(14px);
+    font-weight: 300;
+    margin: 16px 0 15px 0;
   }
 }

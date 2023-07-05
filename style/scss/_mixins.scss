@@ -58,3 +58,12 @@
   font-family: var(--font-main);
   font-size: $size;
 }
+
+@mixin cards-3 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  @include tablet {
+    flex-direction: column;
+  }
+}

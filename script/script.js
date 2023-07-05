@@ -50,13 +50,14 @@ const toggleNavbar = () => {
   }, 200);
 };
 
-setColorFromLocalStorage();
 const nav = document.querySelector(".nav__links");
 const navIcons = document.querySelectorAll(".nav__icon");
 const colorLinks = document.querySelectorAll(".nav__color-link");
+
 colorLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     setThemeColors(e.target.dataset.color);
     window.localStorage.setItem("favColor", e.target.dataset.color);
   });
 });
+setColorFromLocalStorage();

@@ -326,7 +326,7 @@ input {
   padding: 10px;
 }
 .offer__cards {
-  margin-top: 5%;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,6 +388,9 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (max-width: 700px) {
   .offices__cards {
@@ -450,4 +453,63 @@ input {
   opacity: 0;
   -webkit-transition: bottom 0.5s;
   transition: bottom 0.5s;
+}
+
+.team {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+.team__heading {
+  font-family: var(--font-main);
+  font-size: 36px;
+  font-weight: 600;
+}
+.team__subheading {
+  font-family: var(--font-main);
+  font-size: 14px;
+  line-height: 22px;
+  padding: 10px;
+}
+.team__cards {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 700px) {
+  .team__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.team__card {
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.team__image {
+  width: 100%;
+  border-radius: 10px;
+}
+.team__card-title {
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+  text-align: left;
+}
+.team__description {
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 300;
+  margin: 16px 0 15px 0;
 }/*# sourceMappingURL=style.css.map */
